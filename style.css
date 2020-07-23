@@ -58,7 +58,7 @@ nav ul {
     text-align: right;
     margin: 0;
     padding-right: 40px;
-    transition: 1s;
+    transition: .5s;
 }
 
 nav.black ul {

@@ -25,10 +25,10 @@
                </div>
                <div class="menu">
                   <ul>
-                     <li><a href="#">About</a></li>
-                     <li><a href="#Schedule">Schedule</a></li>
-                     <li><a href="#">Group Info</a></li>
-                     <li><a href="#">Contact</a></li>
+                     <li><a href="#" class="menu-items">About</a></li>
+                     <li><a href="#WeeklySchedule" class="menu-items">Weekly Schedule</a></li>
+                     <li><a href="#" class="menu-items">Group Info</a></li>
+                     <li><a href="#" class="menu-items">Contact</a></li>
                   </ul>
                </div>
             </nav>
@@ -36,6 +36,7 @@
          <div class="content">
             <div class="row" id="btn-array">
                 <a class="btn btn-primary btn-lg" target="_blank" rel="noopener" href="https://www.firstorlando.com/event/celebrate-recovery-online-summit/">Virtual Summit Registration</a>
+
                 <a class="btn btn-primary btn-lg" target="_blank" rel="noopener" href="https://huntsimon23.github.io/FBOCR-zoom/">Group Zoom links</a>
 
                 <a class="btn btn-primary btn-lg" target="_blank" rel="noopener" href="https://firstorlando.com/give">Give to CR at FBO</a> 
@@ -43,23 +44,22 @@
                 <a class="btn btn-primary btn-lg" target="_blank" rel="noopener" href="https://mailchi.mp/926ac6e00014/fbocr07142020">Announcements 7/14/2020</a>
             </div>
             <hr>
-            <h3 style="text-align: center;">We meet Every Tuesday!</h3>
+            <section id="WeeklySchedule">
+            <!-- <h3 style="text-align: center">We meet Every Tuesday!</h3> -->
             <div class="row">
                 <div class="col-sm">
                     <div id="schedule"></div>
                 </div>
                 <div class="col-sm">
-                    <p>IN PERSON: Resume Date TBD</p>
-                    <p>ONLINE:</p> 
-                    <p>5pm: Weekly lesson or testimony will be posted on our online groups page.</p>
-                    <p>7:30pm: Open Share Groups* begin.<br>  
-                    * Newcomer's 101 orientation required prior to joining a group.</p>
-                    
-                    <h6>Step Studies: Coming soon!</h6>
-                    <a class="btn btn primary" href="#">Get Step Study Info
-                    </a>
+                    <p style="font-weight: bold; text-align: left;">IN PERSON: <span style="font-weight: normal;">Resume Date TBD</span><br>
+                    ONLINE:<br> 
+                    5pm: <span style="font-weight: normal;">Weekly lesson or testimony will be posted on our online groups page.</span><br>
+                    7:30pm: <span style="font-weight: normal;">Open Share Groups* begin.</span><br>
+                    Step Studies:<span class="btn btn-primary" style="float: none" href="#">Get Info</span><br>
+                    <span style="font-style: italic; font-weight: normal; font-size: smaller;">* Newcomer's 101 orientation required prior to joining a group.</span><span class="btn btn-primary" style="float: none" href="#">Schedule Newcomers 101</span></p>
                 </div>
             </div>
+            </section>
             <hr>
             <div class="row" height="200px">
                 <div class="col" id="updates">
@@ -102,6 +102,9 @@
         <script>$(document).ready(function() {
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
+            });
+            $(".menu-items").on("click", function() {
+                $("nav ul").removeClass("showing");
             });
       });
     
